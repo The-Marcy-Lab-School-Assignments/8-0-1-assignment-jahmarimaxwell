@@ -1,3 +1,4 @@
+/** FEEDBACK: I noticed that your package.json file was crafted not created, in the future when starting a server from scratch the first command you should run in server is npm init -Y */
 const express = require('express');
 const app = express();
 
@@ -29,6 +30,7 @@ const logRoutes = (req, res, next) => {
   app.use(logRoutes);
   
   // Register the serveHello controller for the /api/hello route
+  /** FEEDBACK: Great job with this! */
   app.get('/api/hello', serveHello);
 
 // Use the middleware function to serve static assets
